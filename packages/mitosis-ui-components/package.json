@@ -1,0 +1,21 @@
+{
+  "name": "mitosis-ui-components",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Nick Krantz",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "@builder.io/mitosis": "^0.0.92",
+    "@builder.io/mitosis-cli": "^0.0.51",
+    "fs-extra": "^11.1.0",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "build": "npm exec mitosis build && ts-node ./scripts/copy-components.ts"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1"
+  }
+}
