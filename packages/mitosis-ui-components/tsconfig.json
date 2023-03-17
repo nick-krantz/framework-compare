@@ -1,4 +1,0 @@
-{
-  "extends": "tsconfig/mitosis.json",
-  "include": ["**/*.ts", "**/*.tsx"],
-}

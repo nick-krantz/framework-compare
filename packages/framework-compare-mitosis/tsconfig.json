@@ -1,0 +1,4 @@
+{
+  "extends": "framework-compare-tsconfig/mitosis.json",
+  "include": ["**/*.ts", "**/*.tsx"],
+}

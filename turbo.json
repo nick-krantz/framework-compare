@@ -17,7 +17,7 @@
     },
     "dev": {
       "dependsOn": [
-        "mitosis-ui-components#build"
+        "framework-compare-mitosis#build"
       ]
     }
   }

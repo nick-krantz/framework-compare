@@ -1,11 +1,8 @@
 {
-  "name": "mitosis-ui-components",
+  "name": "framework-compare-mitosis",
   "version": "0.0.0",
-  "main": "index.js",
   "author": "Nick Krantz",
-  "license": "UNLICENSED",
   "private": true,
-  "type": "commonjs",
   "dependencies": {
     "@builder.io/mitosis": "^0.0.92",
     "@builder.io/mitosis-cli": "^0.0.51",
