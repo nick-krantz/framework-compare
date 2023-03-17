@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "thing": "turbo daemon status",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
@@ -24,5 +25,5 @@
     "node": ">=14.0.0"
   },
   "dependencies": {},
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@1.22.19"
 }
