@@ -47,9 +47,9 @@ export type User = {
     /** The source URL of the image. */
     url: string;
     /** The image height in pixels */
-    height: number;
+    height: number | null;
     /** The image width in pixels */
-    width: number;
+    width: number | null;
   }[];
   /**
    * The user's Spotify subscription level: "premium", "free", etc.
