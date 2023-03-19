@@ -1,5 +1,5 @@
 module.exports = {
-  extends: [ "turbo", "prettier", "plugin:@builder.io/mitosis/recommended" ],
+  extends: ["turbo", "prettier", "plugin:@builder.io/mitosis/recommended"],
   rules: {
     "@next/next/no-html-link-for-pages": "off",
     "@builder.io/mitosis/css-no-vars": "error",
@@ -9,5 +9,5 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: [ '@builder.io/mitosis' ],
+  plugins: ["@builder.io/mitosis"],
 };

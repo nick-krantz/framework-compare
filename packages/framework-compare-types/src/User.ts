@@ -30,14 +30,14 @@ export type User = {
   external_urls: {
     /** The [Spotify URL](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids) for the object. */
     spotify: string;
-  }
+  };
   /** Information about the followers of the user. */
   followers: {
     /** This will always be set to null, as the Web API does not support it at the moment. */
     href: null;
     /** The total number of followers. */
     total: number;
-  }
+  };
   /** A link to the Web API endpoint for this user. */
   href: string;
   /** The [Spotify user ID](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids) for the user. */
@@ -50,7 +50,7 @@ export type User = {
     height: number;
     /** The image width in pixels */
     width: number;
-  }[],
+  }[];
   /**
    * The user's Spotify subscription level: "premium", "free", etc.
    * (The subscription level "open" can be considered the same as "free".)
@@ -63,4 +63,4 @@ export type User = {
   type: "user";
   /** The [Spotify URI](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids) for the user. */
   uri: string;
-}
+};

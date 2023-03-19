@@ -1,6 +1,6 @@
 module.exports = {
-  files: [ 'index.ts', 'components/**' ],
-  targets: [ 'vue3', 'solid', 'svelte', 'react', 'qwik' ],
+  files: ["index.ts", "components/**"],
+  targets: ["vue3", "solid", "svelte", "react", "qwik"],
   dest: "dist",
   options: {
     vue3: {
@@ -14,11 +14,11 @@ module.exports = {
     },
     react: {
       typescript: true,
-      stateType: 'useState',
-      type: 'dom'
+      stateType: "useState",
+      type: "dom",
     },
     qwik: {
       typescript: true,
     },
-  }
+  },
 };

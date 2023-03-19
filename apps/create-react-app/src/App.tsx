@@ -1,6 +1,6 @@
-import logo from './logo.svg';
-import { PageWrapper } from './mitosis';
-import './App.css';
+import logo from "./logo.svg";
+import { PageWrapper } from "./mitosis";
+import "./App.css";
 
 function App() {
   return (
