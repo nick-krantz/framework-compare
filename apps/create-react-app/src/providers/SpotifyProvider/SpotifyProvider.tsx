@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect } from "react"
-import { getUserDetails } from "framework-compare-api";
+import { api } from "service/api";
 
 type SpotifyState = {
   user: {} | null;
@@ -17,7 +17,7 @@ type SpotifyProviderProps = {
 export const SpotifyProvider = ({children}: SpotifyProviderProps): JSX.Element => {
 
   useEffect(() => {
-    getUserDetails(process.env.CREATE_REACT_APP_ENDPOINT!).then((res) => {
+    api.getUserDetails(process.env.CREATE_REACT_APP_ENDPOINT!).then((res) => {
       console.log(res);
     })
   })

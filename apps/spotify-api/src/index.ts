@@ -3,7 +3,7 @@ import cors, { CorsOptions } from 'cors';
 import cookieParser from 'cookie-parser';
 import { getUserDetails } from './get-user-details';
 
-const { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI, SPOTIFY_API_PORT, CREATE_REACT_APP_ENDOINT } = process.env;
+const { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI, SPOTIFY_API_PORT, CREATE_REACT_APP_ENDPOINT } = process.env;
 
 
 if (!SPOTIFY_CLIENT_ID || !SPOTIFY_CLIENT_SECRET || !SPOTIFY_REDIRECT_URI || !SPOTIFY_API_PORT) {
@@ -30,7 +30,7 @@ const stateKey = 'spotify_auth_state';
 let access_token: string | null = null;
 let frontend_redirect: string | null = null;
 
-const whitelist = [ CREATE_REACT_APP_ENDOINT ]
+const whitelist = [ CREATE_REACT_APP_ENDPOINT ]
 const corsOptions: CorsOptions = {
   credentials: true,
   origin: (origin, callback) => {

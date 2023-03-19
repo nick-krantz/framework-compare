@@ -20,7 +20,9 @@
         "framework-compare-mitosis#build"
       ],
       "env": [
-        "CREATE_REACT_APP_ENDPOINT"
+        "CREATE_REACT_APP_ENDPOINT",
+        "SPOTIFY_API_ENDPOINT",
+        "REACT_APP_SPOTIFY_API_ENDPOINT"
       ]
     }
   }
