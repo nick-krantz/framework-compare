@@ -28,9 +28,13 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 # turbo
 .turbo
 
 # TEMP IGNORE web-api-examples
-# apps/web-api-examples
+apps/web-api-examples
+
+
+dist/*
