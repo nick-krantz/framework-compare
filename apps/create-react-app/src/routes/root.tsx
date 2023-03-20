@@ -8,7 +8,7 @@ export default function Root() {
         <NavLink
           to="/playlist"
           className={({ isActive }) =>
-            isActive ? "block text-darkPurple bg-white rounded-md p-1" : "text-white"
+            `block border rounded-full p-2 text-white ${isActive ? "border-white" : ""}`
           }
         >
           <PlaylistIcon />
