@@ -1,3 +1,6 @@
+import { SpotifyImage } from "./SpotifyImage";
+import { SpotifyExternalURL } from "./SpotifyExternalURL";
+
 export type User = {
   /**
    * The country of the user, as set in the user's account profile.
@@ -27,10 +30,7 @@ export type User = {
     filter_locked: boolean;
   };
   /** Known external URLs for this user. */
-  external_urls: {
-    /** The [Spotify URL](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids) for the object. */
-    spotify: string;
-  };
+  external_urls: SpotifyExternalURL;
   /** Information about the followers of the user. */
   followers: {
     /** This will always be set to null, as the Web API does not support it at the moment. */
@@ -43,14 +43,7 @@ export type User = {
   /** The [Spotify user ID](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids) for the user. */
   id: string;
   /** The user's profile image. */
-  images: {
-    /** The source URL of the image. */
-    url: string;
-    /** The image height in pixels */
-    height: number | null;
-    /** The image width in pixels */
-    width: number | null;
-  }[];
+  images: SpotifyImage[];
   /**
    * The user's Spotify subscription level: "premium", "free", etc.
    * (The subscription level "open" can be considered the same as "free".)

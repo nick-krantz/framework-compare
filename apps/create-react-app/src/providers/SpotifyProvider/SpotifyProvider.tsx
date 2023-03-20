@@ -15,9 +15,7 @@ type SpotifyProviderProps = {
 
 export const SpotifyProvider = ({ children }: SpotifyProviderProps): JSX.Element => {
   useEffect(() => {
-    api.getUserDetails(process.env.CREATE_REACT_APP_ENDPOINT!).then((res) => {
-      console.log(res);
-    });
+    api.getUserDetails(process.env.REACT_APP_ENDPOINT!).then((res) => {});
   });
 
   return <SpotifyContext.Provider value={{}}>{children}</SpotifyContext.Provider>;

@@ -1,4 +1,4 @@
-import { User } from "framework-compare-types";
+import { PlaylistResponse, User } from "framework-compare-types";
 
 export const generateSpotifyAPI = (spotifyEndpoint: string) => ({
   getUserDetails: (redirectURL: string): Promise<User | null> => {
@@ -20,6 +20,14 @@ export const generateSpotifyAPI = (spotifyEndpoint: string) => ({
         )}`;
         return null;
       }
+    });
+  },
+  getPlaylists: (): Promise<PlaylistResponse> => {
+    return fetch(`${spotifyEndpoint}/get-playlists`, {
+      method: "GET",
+      credentials: "include",
+    }).then(async (res) => {
+      return await res.json();
     });
   },
 });

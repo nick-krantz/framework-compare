@@ -2,6 +2,7 @@ import express from "express";
 import cors, { CorsOptions } from "cors";
 import cookieParser from "cookie-parser";
 import { getUserDetails } from "./get-user-details";
+import { getPlaylists } from "./get-playlists";
 
 const {
   SPOTIFY_CLIENT_ID,
@@ -134,6 +135,12 @@ app.get("/is-logged-in", async (req, res) => {
   const userDetails = await getUserDetails(req.cookies.access_token);
 
   res.send({ auth: !!userDetails });
+});
+
+app.get("/get-playlists", async (req, res) => {
+  const playlists = await getPlaylists(req.cookies.access_token);
+
+  res.send({ playlists });
 });
 
 console.log(`Spotify API listening on ${SPOTIFY_API_PORT}`);
