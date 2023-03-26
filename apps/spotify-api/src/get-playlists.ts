@@ -6,6 +6,10 @@ export const getPlaylists = (token: string) => {
       "Content-Type": "application/json",
     },
   }).then(async (res) => {
-    return await res.json();
+    if (res.ok) {
+      return await res.json();
+    }
+
+    return { items: [] };
   });
 };

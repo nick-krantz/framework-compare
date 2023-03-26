@@ -1,5 +1,12 @@
 <template>
-  <header class="flex w-full px-6 py-8 justify-between items-center">
+  <header
+    :class="
+      _classStringToObject(`
+      flex w-full justify-between items-center pb-8 relative mb-14
+      before:contents-[''] before:w-full before:absolute before:bottom-0 before:h-[1px] before:bg-gradient-to-r before:from-transparent before:via-white before:to-transparent
+    `)
+    "
+  >
     <nav><slot /></nav>
     <div>
       <img
@@ -20,5 +27,19 @@ export default {
   name: "header",
 
   props: [],
+
+  methods: {
+    _classStringToObject(str) {
+      const obj = {};
+      if (typeof str !== "string") {
+        return obj;
+      }
+      const classNames = str.trim().split(/\s+/);
+      for (const name of classNames) {
+        obj[name] = true;
+      }
+      return obj;
+    },
+  },
 };
 </script>

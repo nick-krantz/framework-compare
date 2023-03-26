@@ -7,7 +7,7 @@ type PageWrapperProps = {
 export const PageWrapper = component$((props: PageWrapperProps) => {
   return (
     <div
-      class="bg-gradient-to-br from-slate to-darkPurple text-white min-h-screen\tw-full"
+      class="bg-gradient-to-br from-slate to-darkPurple text-white min-h-screen\tw-full px-6 py-8"
       {...props}
     >
       <Slot></Slot>

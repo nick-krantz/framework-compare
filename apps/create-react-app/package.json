@@ -29,6 +29,7 @@
     "@types/react-dom": "^18.0.11",
     "craco-babel-loader": "^1.0.4",
     "cross-env": "^7.0.3",
+    "framework-compare-tsconfig": "*",
     "react-router-dom": "^6.9.0"
   }
 }

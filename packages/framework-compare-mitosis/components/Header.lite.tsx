@@ -4,7 +4,12 @@ export type HeaderProps = {
 
 export default function Header({ children }: HeaderProps) {
   return (
-    <header className="flex w-full px-6 py-8 justify-between items-center">
+    <header
+      className={`
+        flex w-full justify-between items-center pb-8 relative mb-14
+        before:contents-[''] before:w-full before:absolute before:bottom-0 before:h-[1px] before:bg-gradient-to-r before:from-transparent before:via-white before:to-transparent
+      `}
+    >
       <nav>{children}</nav>
       <div>
         <img

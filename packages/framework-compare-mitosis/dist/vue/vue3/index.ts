@@ -2,3 +2,8 @@ export { default as PageWrapper } from "./components/PageWrapper.vue";
 export { default as LoginLink } from "./components/LoginLink.vue";
 export { default as Header } from "./components/Header.vue";
 export { default as PlaylistIcon } from "./components/PlaylistIcon.vue";
+export { default as PlaylistList } from "./components/PlaylistList.vue";
+export { default as PlaylistImage } from "./components/PlaylistImage.vue";
+export { default as PlaylistListItem } from "./components/PlaylistListItem.vue";
+export { default as PlaylistDetails } from "./components/PlaylistDetails.vue";
+export { default as TrackIcon } from "./components/TrackIcon.vue";
