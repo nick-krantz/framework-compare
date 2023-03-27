@@ -7,3 +7,4 @@ export { default as PlaylistImage } from "./components/PlaylistImage.vue";
 export { default as PlaylistListItem } from "./components/PlaylistListItem.vue";
 export { default as PlaylistDetails } from "./components/PlaylistDetails.vue";
 export { default as TrackIcon } from "./components/TrackIcon.vue";
+export { default as PlaylistLink } from "./components/PlaylistLink.vue";

@@ -6,7 +6,7 @@ type PlaylistListItemProps = {
 };
 export const PlaylistListItem = component$((props: PlaylistListItemProps) => {
   return (
-    <li class="flex gap-4" {...props}>
+    <li {...props}>
       <Slot></Slot>
     </li>
   );

@@ -1,4 +1,4 @@
-export const getPlaylists = (token: string, playlistId: string) => {
+export const getPlaylistDetails = (token: string, playlistId: string) => {
   return fetch(`https://api.spotify.com/v1/playlists/${playlistId}`, {
     method: "GET",
     headers: {
@@ -10,6 +10,6 @@ export const getPlaylists = (token: string, playlistId: string) => {
       return await res.json();
     }
 
-    return { items: [] };
+    return null;
   });
 };

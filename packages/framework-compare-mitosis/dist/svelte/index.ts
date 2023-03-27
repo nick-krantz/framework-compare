@@ -7,3 +7,4 @@ export { default as PlaylistImage } from "./components/PlaylistImage.svelte";
 export { default as PlaylistListItem } from "./components/PlaylistListItem.svelte";
 export { default as PlaylistDetails } from "./components/PlaylistDetails.svelte";
 export { default as TrackIcon } from "./components/TrackIcon.svelte";
+export { default as PlaylistLink } from "./components/PlaylistLink.svelte";

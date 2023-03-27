@@ -3,6 +3,7 @@ import cors, { CorsOptions } from "cors";
 import cookieParser from "cookie-parser";
 import { getUserDetails } from "./get-user-details";
 import { getPlaylists } from "./get-playlists";
+import { getPlaylistDetails } from "./get-playlist-details";
 
 const {
   SPOTIFY_CLIENT_ID,
@@ -142,6 +143,21 @@ app.get("/get-playlists", async (req, res) => {
   const playlists = await getPlaylists(req.cookies.access_token);
 
   res.send(playlists);
+});
+
+app.get("/get-playlist-details", async (req, res) => {
+  if (typeof req.query.id === "string") {
+    const playlistDetails = await getPlaylistDetails(req.cookies.access_token, req.query.id);
+
+    if (playlistDetails === null) {
+      res.status(404).send("playlist not found");
+    } else {
+      res.send(playlistDetails);
+    }
+    return;
+  }
+
+  res.status(404).send("playlist not found");
 });
 
 console.log(`Spotify API listening on ${SPOTIFY_API_PORT}`);

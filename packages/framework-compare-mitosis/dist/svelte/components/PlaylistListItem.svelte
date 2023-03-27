@@ -7,6 +7,4 @@
 <script lang="ts">
 </script>
 
-<li class="flex gap-4" {...$$props}>
-  <slot />
-</li>
+<li {...$$props}><slot /></li>

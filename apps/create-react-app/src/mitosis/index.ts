@@ -7,3 +7,4 @@ export { default as PlaylistImage } from "./components/PlaylistImage";
 export { default as PlaylistListItem } from "./components/PlaylistListItem";
 export { default as PlaylistDetails } from "./components/PlaylistDetails";
 export { default as TrackIcon } from "./components/TrackIcon";
+export { default as PlaylistLink } from "./components/PlaylistLink";

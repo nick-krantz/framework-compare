@@ -32,6 +32,14 @@ export const generateSpotifyAPI = (spotifyEndpoint: string) => ({
       return await res.json();
     });
   },
+  getPlaylistDetails: (id: string): Promise<GetPlaylistResponse> => {
+    return fetch(`${spotifyEndpoint}/get-playlist-details?id=${id}`, {
+      method: "GET",
+      credentials: "include",
+    }).then(async (res) => {
+      return await res.json();
+    });
+  },
 });
 
 export type { GetPlaylistsResponse, GetPlaylistResponse };
