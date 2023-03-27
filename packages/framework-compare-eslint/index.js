@@ -3,11 +3,12 @@ module.exports = {
   rules: {
     "@next/next/no-html-link-for-pages": "off",
     "@builder.io/mitosis/css-no-vars": "error",
+    "prettier/prettier": "error",
   },
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
   },
-  plugins: ["@builder.io/mitosis"],
+  plugins: ["@builder.io/mitosis", "prettier"],
 };

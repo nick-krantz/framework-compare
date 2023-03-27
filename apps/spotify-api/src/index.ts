@@ -18,8 +18,9 @@ if (!SPOTIFY_CLIENT_ID || !SPOTIFY_CLIENT_SECRET || !SPOTIFY_REDIRECT_URI || !SP
 
 /**
  * Generates a random string containing numbers and letters
- * @param  {number} length The length of the string
- * @return {string} The generated string
+ *
+ * @param {number} length The length of the string
+ * @returns {string} The generated string
  */
 const generateRandomString = (length: number) => {
   let text = "";
