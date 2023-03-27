@@ -40,7 +40,7 @@ export type User = {
     href: null;
     /** The total number of followers. */
     total: number;
-  };
+  }[];
   /** A link to the Web API endpoint for this user. */
   href: string;
   /**

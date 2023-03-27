@@ -1,4 +1,4 @@
-import { GetPlaylistsResponse } from "framework-compare-types";
+import { GetPlaylistsResponse } from "framework-compare-api";
 import { PlaylistImage, PlaylistList, PlaylistListItem, PlaylistDetails, TrackIcon } from "mitosis";
 import { useLoaderData } from "react-router-dom";
 

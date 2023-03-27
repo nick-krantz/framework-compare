@@ -1,22 +1,7 @@
 import { SpotifyExternalURL } from "./SpotifyExternalURL";
 import { SpotifyImage } from "./SpotifyImage";
 import { User } from "./User";
-
-export type GetPlaylistsResponse = {
-  /** A link to the Web API endpoint returning the full result of the request */
-  href: string;
-  /** The maximum number of items in the response (as set in the query or by default). */
-  limit: number;
-  /** URL to the next page of items. (`null` if none) */
-  next: string | null;
-  /** The offset of the items returned (as set in the query or by default) */
-  offset: number;
-  /** URL to the previous page of items. (`null` if none) */
-  previous: string | null;
-  /** The total number of items available to return. */
-  total: number;
-  items: PlaylistBase[];
-};
+import { Track } from "./Track";
 
 export type PlaylistBase = {
   /** If the owner allows other users to modify the playlist. */
@@ -86,4 +71,20 @@ export type Playlist = {
   };
   /* The version identifier for the current playlist. Can be supplied in other requests to target a specific playlist version */
   snapshot_id: string;
-} & PlaylistBase;
+  /** The tracks of the playlist */
+  tracks: {
+    /** A link to the Web API endpoint returning the full result of the request */
+    href: string;
+    /** The maximum number of items in the response (as set in the query or by default). */
+    limit: number;
+    /** URL to the next page of items. (`null` if none) */
+    next: string | null;
+    /** The offset of the items returned (as set in the query or by default) */
+    offset: number;
+    /** URL to the previous page of items. (`null` if none) */
+    previous: string | null;
+    /** The total number of items available to return. */
+    total: number;
+    items: Track[];
+  };
+} & Omit<PlaylistBase, "tracks">;
