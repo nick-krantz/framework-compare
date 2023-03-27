@@ -1,3 +1,5 @@
+import * as React from "react";
+
 type PlaylistDetailsProps = {
   name: string;
   description: string | null;

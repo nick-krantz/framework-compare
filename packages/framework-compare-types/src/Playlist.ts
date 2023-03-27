@@ -2,7 +2,7 @@ import { SpotifyExternalURL } from "./SpotifyExternalURL";
 import { SpotifyImage } from "./SpotifyImage";
 import { User } from "./User";
 
-export type PlaylistResponse = {
+export type GetPlaylistsResponse = {
   /** A link to the Web API endpoint returning the full result of the request */
   href: string;
   /** The maximum number of items in the response (as set in the query or by default). */
@@ -15,10 +15,10 @@ export type PlaylistResponse = {
   previous: string | null;
   /** The total number of items available to return. */
   total: number;
-  items: Playlist[];
+  items: PlaylistBase[];
 };
 
-export type Playlist = {
+export type PlaylistBase = {
   /** if the owner allows other users to modify the playlist. */
   collaborative: boolean;
   /** The playlist description. Only returned for modified, verified playlists, otherwise null. */

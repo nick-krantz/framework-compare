@@ -1,9 +1,9 @@
-import { PlaylistResponse } from "framework-compare-types";
+import { GetPlaylistsResponse } from "framework-compare-types";
 import { PlaylistImage, PlaylistList, PlaylistListItem, PlaylistDetails, TrackIcon } from "mitosis";
 import { useLoaderData } from "react-router-dom";
 
 export const Playlist = () => {
-  const response = useLoaderData() as PlaylistResponse;
+  const response = useLoaderData() as GetPlaylistsResponse;
 
   return (
     <PlaylistList>
