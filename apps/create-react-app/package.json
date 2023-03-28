@@ -6,6 +6,8 @@
     "autoprefixer": "^10.3.4",
     "framework-compare-api": "*",
     "framework-compare-configs": "*",
+    "framework-compare-mitosis": "*",
+    "framework-compare-utils": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",

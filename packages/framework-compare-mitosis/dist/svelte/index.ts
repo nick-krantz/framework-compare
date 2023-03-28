@@ -8,3 +8,6 @@ export { default as PlaylistListItem } from "./components/PlaylistListItem.svelt
 export { default as PlaylistDetails } from "./components/PlaylistDetails.svelte";
 export { default as TrackIcon } from "./components/TrackIcon.svelte";
 export { default as PlaylistLink } from "./components/PlaylistLink.svelte";
+export { default as TrackImage } from "./components/TrackImage.svelte";
+export { default as TrackTable } from "./components/TrackTable.svelte";
+export { default as TrackTableRow } from "./components/TrackTableRow.svelte";

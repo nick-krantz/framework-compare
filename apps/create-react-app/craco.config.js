@@ -11,7 +11,12 @@ module.exports = {
     {
       plugin: cracoBabelLoader,
       options: {
-        includes: [resolvePackage("../../packages/framework-compare-api")],
+        includes: [
+          resolvePackage("../../packages/framework-compare-api"),
+          resolvePackage("../../packages/framework-compare-utils"),
+          resolvePackage("../../packages/framework-compare-mitosis/dist/react"),
+
+        ],
       },
     },
   ],

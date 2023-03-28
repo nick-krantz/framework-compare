@@ -10,7 +10,7 @@
     "ts-node": "^10.9.1"
   },
   "scripts": {
-    "build": "npm exec mitosis build && ts-node ./scripts/copy-components.ts"
+    "build": "npm exec mitosis build"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.1"

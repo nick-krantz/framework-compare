@@ -8,3 +8,6 @@ export { default as PlaylistListItem } from "./components/PlaylistListItem.lite"
 export { default as PlaylistDetails } from "./components/PlaylistDetails.lite";
 export { default as TrackIcon } from "./components/TrackIcon.lite";
 export { default as PlaylistLink } from "./components/PlaylistLink.lite";
+export { default as TrackImage } from "./components/TrackImage.lite";
+export { default as TrackTable } from "./components/TrackTable.lite";
+export { default as TrackTableRow } from "./components/TrackTableRow.lite";

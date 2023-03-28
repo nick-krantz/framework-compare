@@ -1,17 +1,17 @@
 import * as React from "react";
 
-type PlaylistImageProps = {
-  /** URL of the playlist image */
+type TrackImageProps = {
+  /** URL of the track image */
   url: string;
-  /** Name of the playlist */
+  /** Name of the track */
   name: string;
 };
 
-function PlaylistImage(props: PlaylistImageProps) {
+function TrackImage(props: TrackImageProps) {
   return (
     <div className="relative max-w-max">
       <img
-        className="h-32 min-w-[8rem] z-[2] relative"
+        className="h-24 min-w-[6rem] z-[2] relative"
         src={props.url}
         alt={props.name}
         style={{
@@ -39,4 +39,4 @@ function PlaylistImage(props: PlaylistImageProps) {
   );
 }
 
-export default PlaylistImage;
+export default TrackImage;

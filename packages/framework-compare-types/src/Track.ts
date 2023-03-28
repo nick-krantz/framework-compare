@@ -1,16 +1,14 @@
 import { SpotifyExternalURL } from "./SpotifyExternalURL";
 import { User } from "./User";
 import { Artist } from "./Artist";
+import { Album } from "./Album";
 
 export type Track = {
-  /** The date and time the track was added */
-  added_at: string | null;
-
   /**
-   * The Spotify user who added the track or episode. Note: some very old playlists may return null
-   * in this field.
+   * The album on which the track appears. The album object includes a link in href to full
+   * information about the album.
    */
-  added_by: Pick<User, "external_urls" | "followers" | "href" | "id" | "type" | "uri"> | null;
+  album: Album;
 
   /**
    * The artists who performed the track. Each artist object includes a link in href to more
@@ -109,7 +107,4 @@ export type Track = {
 
   /** The Spotify URI for the track. */
   uri: string;
-
-  /** Whether or not the track is from a local file */
-  is_local: boolean;
 };

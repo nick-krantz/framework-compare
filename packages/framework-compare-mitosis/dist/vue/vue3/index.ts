@@ -8,3 +8,6 @@ export { default as PlaylistListItem } from "./components/PlaylistListItem.vue";
 export { default as PlaylistDetails } from "./components/PlaylistDetails.vue";
 export { default as TrackIcon } from "./components/TrackIcon.vue";
 export { default as PlaylistLink } from "./components/PlaylistLink.vue";
+export { default as TrackImage } from "./components/TrackImage.vue";
+export { default as TrackTable } from "./components/TrackTable.vue";
+export { default as TrackTableRow } from "./components/TrackTableRow.vue";
