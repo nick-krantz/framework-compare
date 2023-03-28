@@ -1,7 +1,7 @@
 import { GetPlaylistResponse } from "framework-compare-api";
 import { useLoaderData } from "react-router-dom";
 import { millisecondDisplay } from "framework-compare-utils";
-import { TrackTable, TrackTableRow } from "framework-compare-mitosis/dist/react";
+import { TrackTable, TrackTableRow } from "framework-compare-mitosis/react";
 
 export const PlaylistDetails = () => {
   const playlist = useLoaderData() as GetPlaylistResponse;

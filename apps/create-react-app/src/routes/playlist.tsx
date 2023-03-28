@@ -5,7 +5,7 @@ import {
   PlaylistListItem,
   PlaylistDetails,
   PlaylistLink,
-} from "framework-compare-mitosis/dist/react";
+} from "framework-compare-mitosis/react";
 import { useLoaderData } from "react-router-dom";
 
 export const Playlist = () => {

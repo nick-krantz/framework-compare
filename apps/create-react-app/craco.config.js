@@ -14,7 +14,7 @@ module.exports = {
         includes: [
           resolvePackage("../../packages/framework-compare-api"),
           resolvePackage("../../packages/framework-compare-utils"),
-          resolvePackage("../../packages/framework-compare-mitosis/dist/react"),
+          resolvePackage("../../packages/framework-compare-mitosis/react"),
 
         ],
       },
