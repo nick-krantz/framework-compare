@@ -11,7 +11,7 @@ function TrackImage(props: TrackImageProps) {
   return (
     <div className="relative max-w-max">
       <img
-        className="h-24 min-w-[6rem] z-[2] relative"
+        className="h-20 min-w-[5rem] z-[2] relative"
         src={props.url}
         alt={props.name}
         style={{

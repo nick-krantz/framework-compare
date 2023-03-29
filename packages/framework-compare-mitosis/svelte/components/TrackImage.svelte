@@ -27,7 +27,7 @@
     use:mitosis_styling={{
       clipPath: `url(#squircleClip)`,
     }}
-    class="h-24 min-w-[6rem] z-[2] relative"
+    class="h-20 min-w-[5rem] z-[2] relative"
     src={url}
     alt={name}
   />

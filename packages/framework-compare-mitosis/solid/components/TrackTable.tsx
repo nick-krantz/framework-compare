@@ -11,10 +11,18 @@ function TrackTable(props: TrackTableProps) {
       <table class="table-auto w-full">
         <thead>
           <tr>
-            <th class="absolute max-w-0 overflow-hidden left-[-99999px]">Album Image</th>
-            <th class="text-xl font-normal py-2 px-2 text-start">{props.titleSlot}</th>
-            <th class="text-xl font-normal py-2 px-2 text-start">{props.artistSlot}</th>
-            <th class="text-xl font-normal py-2 px-2 pr-6 text-end">{props.durationSlot}</th>
+            <th class="absolute max-w-0 overflow-hidden left-[-99999px]">
+              Album Image
+            </th>
+            <th class="text-xl font-normal py-2 px-2 text-start">
+              {props.titleSlot}
+            </th>
+            <th class="text-xl font-normal py-2 px-2 text-start">
+              {props.artistSlot}
+            </th>
+            <th class="text-xl font-normal py-2 px-2 pr-6">
+              {props.durationSlot}
+            </th>
           </tr>
         </thead>
         <tbody>{props.children}</tbody>

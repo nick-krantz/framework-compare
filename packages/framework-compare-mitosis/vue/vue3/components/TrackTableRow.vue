@@ -7,7 +7,7 @@
     </td>
     <td class="py-2 px-2 font-light">{{ name }}</td>
     <td class="py-2 px-2 font-light">{{ artist }}</td>
-    <td class="py-2 px-2 pr-6 text-end font-light">{{ duration }}</td>
+    <td class="py-2 px-2 pr-6 font-light">{{ duration }}</td>
   </tr>
 </template>
 

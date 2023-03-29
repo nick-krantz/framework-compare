@@ -14,3 +14,4 @@ export { default as TrackTableRow } from "./components/TrackTableRow";
 export { default as DownArrow } from "./components/DownArrow";
 export { default as TableHeader } from "./components/TableHeader";
 export { default as UpArrow } from "./components/UpArrow";
+export { default as PlaylistDetailTitle } from "./components/PlaylistDetailTitle";

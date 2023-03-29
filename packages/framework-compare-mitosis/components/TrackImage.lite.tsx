@@ -12,7 +12,7 @@ export default function TrackImage({ url, name }: TrackImageProps) {
         src={url}
         alt={name}
         style={{ clipPath: `url(#squircleClip)` }}
-        className="h-24 min-w-[6rem] z-[2] relative"
+        className="h-20 min-w-[5rem] z-[2] relative"
       />
       <img
         src={url}

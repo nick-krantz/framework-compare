@@ -15,7 +15,7 @@ function TrackTableRow(props: TrackTableRowProps) {
       </td>
       <td class="py-2 px-2 font-light">{props.name}</td>
       <td class="py-2 px-2 font-light">{props.artist}</td>
-      <td class="py-2 px-2 pr-6 text-end font-light">{props.duration}</td>
+      <td class="py-2 px-2 pr-6 font-light">{props.duration}</td>
     </tr>
   );
 }

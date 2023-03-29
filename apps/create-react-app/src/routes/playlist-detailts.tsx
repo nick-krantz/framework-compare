@@ -1,7 +1,12 @@
 import { GetPlaylistResponse } from "framework-compare-api";
 import { useLoaderData } from "react-router-dom";
 import { millisecondDisplay, sortTracks } from "framework-compare-utils";
-import { TrackTable, TrackTableRow, TableHeader } from "framework-compare-mitosis/react";
+import {
+  TrackTable,
+  TrackTableRow,
+  TableHeader,
+  PlaylistDetailTitle,
+} from "framework-compare-mitosis/react";
 import { useState } from "react";
 import {
   ARTIST_COLUMN,
@@ -36,13 +41,11 @@ export const PlaylistDetails = () => {
     sortDirection: ASCENDING,
   });
 
-  const ascending = sortDirection === ASCENDING;
-
   const sort = (column: PlaylistColumns) => () => {
     const newSort = sortTracks(
       playlist.tracks.items.map((i) => i.track),
       column,
-      sortDirection
+      sortedColumn === column ? sortDirection : DESCENDING
     );
     setSortState({
       tracks: newSort.tracks,
@@ -51,10 +54,11 @@ export const PlaylistDetails = () => {
     });
   };
 
+  const ascending = sortDirection === ASCENDING;
+
   return (
     <section>
-      <h1>{name}</h1>
-      <p>{description}</p>
+      <PlaylistDetailTitle name={name} description={description ?? ""} />
 
       <TrackTable
         titleSlot={

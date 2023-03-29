@@ -23,9 +23,7 @@
         <th class="text-xl font-normal py-2 px-2 text-start">{titleSlot}</th>
 
         <th class="text-xl font-normal py-2 px-2 text-start">{artistSlot}</th>
-        <th class="text-xl font-normal py-2 px-2 pr-6 text-end"
-          >{durationSlot}</th
-        >
+        <th class="text-xl font-normal py-2 px-2 pr-6">{durationSlot}</th>
       </tr>
     </thead>
     <tbody><slot /></tbody>

@@ -15,7 +15,7 @@ export default function TrackTableRow({ name, imageURL, artist, duration }: Trac
       </td>
       <td className="py-2 px-2 font-light">{name}</td>
       <td className="py-2 px-2 font-light">{artist}</td>
-      <td className="py-2 px-2 pr-6 text-end font-light">{duration}</td>
+      <td className="py-2 px-2 pr-6 font-light">{duration}</td>
     </tr>
   );
 }
