@@ -1,22 +1,31 @@
 <script context="module" lang="ts">
   type TrackTableProps = {
     children: any;
+    titleSlot: any;
+    artistSlot: any;
+    durationSlot: any;
   };
 </script>
 
 <script lang="ts">
+  export let titleSlot: TrackTableProps["titleSlot"];
+  export let artistSlot: TrackTableProps["artistSlot"];
+  export let durationSlot: TrackTableProps["durationSlot"];
 </script>
 
 <div class="border border-[#f4f4f444] rounded-lg">
-  <table class="table-auto">
+  <table class="table-auto w-full">
     <thead>
       <tr>
         <th class="absolute max-w-0 overflow-hidden left-[-99999px]"
           >Album Image</th
         >
-        <th class="text-xl font-normal py-2 px-2 text-start">TITLE</th>
-        <th class="text-xl font-normal py-2 px-2 text-start">ARTISTS</th>
-        <th class="text-xl font-normal py-2 px-2 pr-6 text-end">DURATION</th>
+        <th class="text-xl font-normal py-2 px-2 text-start">{titleSlot}</th>
+
+        <th class="text-xl font-normal py-2 px-2 text-start">{artistSlot}</th>
+        <th class="text-xl font-normal py-2 px-2 pr-6 text-end"
+          >{durationSlot}</th
+        >
       </tr>
     </thead>
     <tbody><slot /></tbody>

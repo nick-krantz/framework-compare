@@ -10,10 +10,7 @@ type TrackTableRowProps = {
 };
 export const TrackTableRow = component$((props: TrackTableRowProps) => {
   return (
-    <tr
-      class="bg-fadedWhite border-y border-white border-left-0 last-of-type:border-b-0"
-      {...props}
-    >
+    <tr class="bg-fadedWhite border-y border-white border-left-0 last-of-type:border-b-0">
       <td class="py-6 px-2 pl-6">
         <TrackImage url={props.imageURL} name={props.name}></TrackImage>
       </td>

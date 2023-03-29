@@ -5,11 +5,7 @@ type PlaylistLinkProps = {
 
 function PlaylistLink(props: PlaylistLinkProps) {
   return (
-    <a
-      class="grid grid-cols-[min-content_auto_auto] gap-4 p-3 group"
-      {...props}
-      href={props.href}
-    >
+    <a class="grid grid-cols-[min-content_auto_auto] gap-4 p-3 group" {...props} href={props.href}>
       {props.children}
       <div
         class={`

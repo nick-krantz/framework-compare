@@ -2,3 +2,8 @@ export * from "./User";
 export * from "./Playlist";
 export * from "./SpotifyImage";
 export * from "./SpotifyExternalURL";
+export * from "./Album";
+export * from "./Track";
+export * from "./Artist";
+export * from "./PlaylistColumns";
+export * from "./SortDirection";

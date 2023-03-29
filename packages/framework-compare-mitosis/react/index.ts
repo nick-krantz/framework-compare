@@ -11,3 +11,6 @@ export { default as PlaylistLink } from "./components/PlaylistLink";
 export { default as TrackImage } from "./components/TrackImage";
 export { default as TrackTable } from "./components/TrackTable";
 export { default as TrackTableRow } from "./components/TrackTableRow";
+export { default as DownArrow } from "./components/DownArrow";
+export { default as TableHeader } from "./components/TableHeader";
+export { default as UpArrow } from "./components/UpArrow";

@@ -15,7 +15,7 @@ module.exports = {
           resolvePackage("../../packages/framework-compare-api"),
           resolvePackage("../../packages/framework-compare-utils"),
           resolvePackage("../../packages/framework-compare-mitosis/react"),
-
+          resolvePackage("../../packages/framework-compare-types"),
         ],
       },
     },

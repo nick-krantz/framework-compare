@@ -11,3 +11,6 @@ export { default as PlaylistLink } from "./components/PlaylistLink.svelte";
 export { default as TrackImage } from "./components/TrackImage.svelte";
 export { default as TrackTable } from "./components/TrackTable.svelte";
 export { default as TrackTableRow } from "./components/TrackTableRow.svelte";
+export { default as DownArrow } from "./components/DownArrow.svelte";
+export { default as TableHeader } from "./components/TableHeader.svelte";
+export { default as UpArrow } from "./components/UpArrow.svelte";

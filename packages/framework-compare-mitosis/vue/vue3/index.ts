@@ -11,3 +11,6 @@ export { default as PlaylistLink } from "./components/PlaylistLink.vue";
 export { default as TrackImage } from "./components/TrackImage.vue";
 export { default as TrackTable } from "./components/TrackTable.vue";
 export { default as TrackTableRow } from "./components/TrackTableRow.vue";
+export { default as DownArrow } from "./components/DownArrow.vue";
+export { default as TableHeader } from "./components/TableHeader.vue";
+export { default as UpArrow } from "./components/UpArrow.vue";

@@ -13,6 +13,7 @@
     "build": "npm exec mitosis build"
   },
   "devDependencies": {
-    "@types/fs-extra": "^11.0.1"
+    "@types/fs-extra": "^11.0.1",
+    "framework-compare-types": "*"
   }
 }
