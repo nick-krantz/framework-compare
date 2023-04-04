@@ -16,9 +16,6 @@
       "outputs": []
     },
     "dev": {
-      "dependsOn": [
-        "framework-compare-mitosis#build"
-      ],
       "env": [
         "REACT_APP_ENDPOINT",
         "SPOTIFY_API_ENDPOINT",

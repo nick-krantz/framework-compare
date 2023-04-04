@@ -24,18 +24,28 @@ export const generateSpotifyAPI = (spotifyEndpoint: string) => ({
       }
     });
   },
-  getPlaylists: (): Promise<GetPlaylistsResponse> => {
+  getPlaylists: (cookie?: string): Promise<GetPlaylistsResponse> => {
     return fetch(`${spotifyEndpoint}/get-playlists`, {
       method: "GET",
       credentials: "include",
+      headers: cookie
+        ? {
+            cookie: `access_token=${cookie};`,
+          }
+        : undefined,
     }).then(async (res) => {
       return await res.json();
     });
   },
-  getPlaylistDetails: (id: string): Promise<GetPlaylistResponse> => {
+  getPlaylistDetails: (id: string, cookie?: string): Promise<GetPlaylistResponse> => {
     return fetch(`${spotifyEndpoint}/get-playlist-details?id=${id}`, {
       method: "GET",
       credentials: "include",
+      headers: cookie
+        ? {
+            cookie: `access_token=${cookie};`,
+          }
+        : undefined,
     }).then(async (res) => {
       return await res.json();
     });

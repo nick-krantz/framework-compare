@@ -7,3 +7,4 @@ export * from "./Track";
 export * from "./Artist";
 export * from "./PlaylistColumns";
 export * from "./SortDirection";
+export * from "./SortState";
