@@ -15,3 +15,7 @@ export { default as DownArrow } from "./components/DownArrow.lite";
 export { default as TableHeader } from "./components/TableHeader.lite";
 export { default as UpArrow } from "./components/UpArrow.lite";
 export { default as PlaylistDetailTitle } from "./components/PlaylistDetailTitle.lite";
+export { default as TrackTableHeaderAlbumImage } from "./components/TrackTableHeaderAlbumImage.lite";
+export { default as TrackTableHeaderArtist } from "./components/TrackTableHeaderArtist.lite";
+export { default as TrackTableHeaderDuration } from "./components/TrackTableHeaderDuration.lite";
+export { default as TrackTableHeaderTitle } from "./components/TrackTableHeaderTitle.lite";

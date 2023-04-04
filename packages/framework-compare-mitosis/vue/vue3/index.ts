@@ -15,3 +15,7 @@ export { default as DownArrow } from "./components/DownArrow.vue";
 export { default as TableHeader } from "./components/TableHeader.vue";
 export { default as UpArrow } from "./components/UpArrow.vue";
 export { default as PlaylistDetailTitle } from "./components/PlaylistDetailTitle.vue";
+export { default as TrackTableHeaderAlbumImage } from "./components/TrackTableHeaderAlbumImage.vue";
+export { default as TrackTableHeaderArtist } from "./components/TrackTableHeaderArtist.vue";
+export { default as TrackTableHeaderDuration } from "./components/TrackTableHeaderDuration.vue";
+export { default as TrackTableHeaderTitle } from "./components/TrackTableHeaderTitle.vue";

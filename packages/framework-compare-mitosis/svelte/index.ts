@@ -15,3 +15,7 @@ export { default as DownArrow } from "./components/DownArrow.svelte";
 export { default as TableHeader } from "./components/TableHeader.svelte";
 export { default as UpArrow } from "./components/UpArrow.svelte";
 export { default as PlaylistDetailTitle } from "./components/PlaylistDetailTitle.svelte";
+export { default as TrackTableHeaderAlbumImage } from "./components/TrackTableHeaderAlbumImage.svelte";
+export { default as TrackTableHeaderArtist } from "./components/TrackTableHeaderArtist.svelte";
+export { default as TrackTableHeaderDuration } from "./components/TrackTableHeaderDuration.svelte";
+export { default as TrackTableHeaderTitle } from "./components/TrackTableHeaderTitle.svelte";

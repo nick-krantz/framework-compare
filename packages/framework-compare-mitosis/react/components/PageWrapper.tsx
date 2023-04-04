@@ -7,7 +7,7 @@ type PageWrapperProps = {
 function PageWrapper(props: PageWrapperProps) {
   return (
     <div
-      className="bg-gradient-to-br from-slate to-darkPurple text-white min-h-screen	w-full px-6 py-8"
+      className="min-h-screen bg-gradient-to-br from-slate to-darkPurple text-white min-h-screen	w-full px-6 py-8"
       {...props}
     >
       {props.children}
