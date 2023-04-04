@@ -1,4 +1,4 @@
-import { Header, PageWrapper, PlaylistIcon } from "framework-compare-mitosis/react";
+import { Header, PageWrapper, PlaylistIcon } from "mitosis";
 import { Outlet, NavLink } from "react-router-dom";
 
 export default function Root() {

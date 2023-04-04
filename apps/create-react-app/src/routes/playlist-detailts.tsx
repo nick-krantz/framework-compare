@@ -10,7 +10,7 @@ import {
   TrackTableHeaderAlbumImage,
   TrackTableHeaderArtist,
   TrackTableHeaderDuration,
-} from "framework-compare-mitosis/react";
+} from "mitosis";
 import { useState } from "react";
 import {
   ARTIST_COLUMN,

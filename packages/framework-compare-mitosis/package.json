@@ -10,7 +10,7 @@
     "ts-node": "^10.9.1"
   },
   "scripts": {
-    "build": "npm exec mitosis build && npm run post-build",
+    "generate": "npm exec mitosis build && npm run post-build",
     "post-build": "ts-node ./scripts/post-build.ts"
   },
   "devDependencies": {
