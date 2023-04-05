@@ -35,6 +35,7 @@
     "./.eslintrc.cjs"
   ],
   "include": [
-    "src"
+    "src",
+    "vite.config.ts"
   ]
 }
