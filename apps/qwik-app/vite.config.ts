@@ -11,6 +11,9 @@ export default defineConfig(() => {
         "Cache-Control": "public, max-age=600",
       },
     },
-    port: 3001,
+    server: {
+      // default to vite default of `5173`
+      port: process.env.QWIK_PORT ? Number(process.env.QWIK_PORT) : 5173,
+    }
   };
 });
