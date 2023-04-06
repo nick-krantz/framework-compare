@@ -24,7 +24,6 @@ if (!destination) {
 if (!existsSync(`./${target}`)) {
   cleanup();
   throw new Error("missing Mitosis components");
-
 }
 
 copySync(`./${target}`, `${destination}/mitosis`);
