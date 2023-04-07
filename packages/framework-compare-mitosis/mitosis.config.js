@@ -1,6 +1,6 @@
 module.exports = {
   files: ["index.ts", "components/**"],
-  targets: ["vue3", "solid", "svelte", "react", "qwik"],
+  targets: ["vue3", "react", "qwik"],
   dest: ".",
   options: {
     vue3: {

@@ -10,8 +10,8 @@
     "ts-node": "^10.9.1"
   },
   "scripts": {
-    "generate": "npm exec mitosis build && npm run post-build",
-    "post-build": "ts-node ./scripts/post-build.ts"
+    "generate": "npm exec mitosis build && npm run move-components",
+    "move-components": "ts-node ./scripts/move-components.ts"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
