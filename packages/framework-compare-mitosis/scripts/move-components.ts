@@ -16,8 +16,8 @@ const targets: Record<OutputFramework, Target> = {
     outputDestinations: ["../../apps/nuxt-app/"],
     callback: () => {
       // remove index.ts not applicable to nuxt
-      rmSync('../../apps/nuxt-app/index.ts');
-    }
+      rmSync("../../apps/nuxt-app/index.ts");
+    },
   },
   react: { baseFolder: "./react", outputDestinations: ["../../apps/create-react-app/src/mitosis"] },
   qwik: { baseFolder: "./qwik", outputDestinations: ["../../apps/qwik-app/src/mitosis"] },
