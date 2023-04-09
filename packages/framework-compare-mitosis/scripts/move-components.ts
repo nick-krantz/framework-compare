@@ -1,6 +1,6 @@
-import { copySync, existsSync, rmSync, moveSync } from "fs-extra";
+import { copySync, existsSync, rmSync } from "fs-extra";
 
-type OutputFramework = "react" | "vue" | "qwik";
+type OutputFramework = "react" | "vue" | "qwik" | "svelte";
 
 type Target = {
   baseFolder: string;
@@ -21,6 +21,7 @@ const targets: Record<OutputFramework, Target> = {
   },
   react: { baseFolder: "./react", outputDestinations: ["../../apps/create-react-app/src/mitosis"] },
   qwik: { baseFolder: "./qwik", outputDestinations: ["../../apps/qwik-app/src/mitosis"] },
+  svelte: { baseFolder: "./svelte", outputDestinations: ["../../apps/svelte-kit-app/src/mitosis"] },
 };
 
 const target = process.argv[process.argv.length - 1] as OutputFramework;
