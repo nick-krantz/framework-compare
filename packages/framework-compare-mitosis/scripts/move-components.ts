@@ -19,7 +19,13 @@ const targets: Record<OutputFramework, Target> = {
       rmSync("../../apps/nuxt-app/index.ts");
     },
   },
-  react: { baseFolder: "./react", outputDestinations: ["../../apps/create-react-app/src/mitosis"] },
+  react: {
+    baseFolder: "./react",
+    outputDestinations: [
+      "../../apps/create-react-app/src/mitosis",
+      "../../apps/nextjs-app/mitosis"
+    ]
+  },
   qwik: { baseFolder: "./qwik", outputDestinations: ["../../apps/qwik-app/src/mitosis"] },
   svelte: { baseFolder: "./svelte", outputDestinations: ["../../apps/svelte-kit-app/src/mitosis"] },
 };
