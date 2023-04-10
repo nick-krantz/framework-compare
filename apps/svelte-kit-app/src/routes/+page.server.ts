@@ -1,6 +1,6 @@
-import { redirect } from '@sveltejs/kit';
+import { redirect } from "@sveltejs/kit";
 
-/** @type {import('./$types').PageLoad} */
+/** @type {import("./$types").PageLoad} */
 export function load() {
-	throw redirect(307, '/playlist');
+  throw redirect(307, "/playlist");
 }
