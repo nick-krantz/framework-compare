@@ -1,16 +1,6 @@
 "use client";
 
 import {
-  TableHeader,
-  TrackTable,
-  TrackTableHeaderAlbumImage,
-  TrackTableHeaderArtist,
-  TrackTableHeaderDuration,
-  TrackTableHeaderTitle,
-  TrackTableRow,
-} from "../mitosis";
-import { millisecondDisplay, sortTracks } from "framework-compare-utils";
-import {
   ARTIST_COLUMN,
   ASCENDING,
   DESCENDING,
@@ -20,7 +10,17 @@ import {
   SortState,
   Track,
 } from "framework-compare-types";
+import { millisecondDisplay, sortTracks } from "framework-compare-utils";
 import { useState } from "react";
+import {
+  TableHeader,
+  TrackTable,
+  TrackTableHeaderAlbumImage,
+  TrackTableHeaderArtist,
+  TrackTableHeaderDuration,
+  TrackTableHeaderTitle,
+  TrackTableRow,
+} from "../mitosis";
 
 type ClientSideTrackTableProps = {
   initialTracks: Track[];

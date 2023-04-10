@@ -1,11 +1,10 @@
-import * as React from "react";
+import TrackIcon from "./TrackIcon";
 
 type PlaylistDetailsProps = {
   name: string;
   description: string | null;
   tracksTotal: number;
 };
-import TrackIcon from "./TrackIcon";
 
 function PlaylistDetails(props: PlaylistDetailsProps) {
   return (

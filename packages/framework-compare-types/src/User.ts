@@ -1,5 +1,5 @@
-import { SpotifyImage } from "./SpotifyImage";
 import { SpotifyExternalURL } from "./SpotifyExternalURL";
+import { SpotifyImage } from "./SpotifyImage";
 
 export type User = {
   /**

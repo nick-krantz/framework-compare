@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function PlaylistIcon(props: any) {
   return (
     <svg viewBox="0 0 24 24" className="w-8 h-8 md:w-12 md:h-12">

@@ -1,5 +1,3 @@
-import * as React from "react";
-
 type PlaylistDetailTitleProps = {
   name: string;
   description: string;

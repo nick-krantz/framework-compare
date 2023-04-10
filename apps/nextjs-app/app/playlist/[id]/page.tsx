@@ -1,9 +1,9 @@
+import { DESCENDING, NAME_COLUMN } from "framework-compare-types";
+import { sortTracks } from "framework-compare-utils";
 import { cookies } from "next/headers";
 import { ClientSideTrackTable } from "../../../components/ClientSideTrackTable";
 import { PlaylistDetailTitle } from "../../../mitosis";
 import { api } from "../../../service/api";
-import { sortTracks } from "framework-compare-utils";
-import { DESCENDING, NAME_COLUMN } from "framework-compare-types";
 
 export default async function PlaylistDetails({ params }: { params: { id: string } }) {
   const access_token = cookies().get("access_token");

@@ -1,5 +1,3 @@
-import * as React from "react";
-
 type PlaylistImageProps = {
   /** URL of the playlist image */
   url: string;

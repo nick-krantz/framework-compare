@@ -1,7 +1,7 @@
 import { SpotifyExternalURL } from "./SpotifyExternalURL";
 import { SpotifyImage } from "./SpotifyImage";
-import { User } from "./User";
 import { Track } from "./Track";
+import { User } from "./User";
 
 export type PlaylistBase = {
   /** If the owner allows other users to modify the playlist. */

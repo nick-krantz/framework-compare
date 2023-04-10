@@ -1,5 +1,5 @@
 import { Header, PageWrapper, PlaylistIcon } from "mitosis";
-import { Outlet, NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 export default function Root() {
   return (

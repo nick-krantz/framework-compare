@@ -1,5 +1,14 @@
-import { component$, useStore, $ } from "@builder.io/qwik";
+import { $, component$, useStore } from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
+import type { PlaylistColumns, SortState } from "framework-compare-types";
+import {
+  ARTIST_COLUMN,
+  ASCENDING,
+  DESCENDING,
+  DURATION_COLUMN,
+  NAME_COLUMN,
+} from "framework-compare-types";
+import { millisecondDisplay, sortTracks } from "framework-compare-utils";
 import {
   PlaylistDetailTitle,
   TableHeader,
@@ -10,15 +19,6 @@ import {
   TrackTableHeaderTitle,
   TrackTableRow,
 } from "~/mitosis";
-import type { PlaylistColumns, SortState } from "framework-compare-types";
-import {
-  ASCENDING,
-  DESCENDING,
-  NAME_COLUMN,
-  ARTIST_COLUMN,
-  DURATION_COLUMN,
-} from "framework-compare-types";
-import { millisecondDisplay, sortTracks } from "framework-compare-utils";
 import { api } from "~/service/api";
 
 export const usePlaylists = routeLoader$(async ({ cookie, params }) => {

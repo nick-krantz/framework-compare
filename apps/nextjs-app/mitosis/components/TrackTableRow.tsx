@@ -1,4 +1,4 @@
-import * as React from "react";
+import TrackImage from "./TrackImage";
 
 type TrackTableRowProps = {
   name: string;
@@ -6,7 +6,6 @@ type TrackTableRowProps = {
   artist: string;
   duration: string;
 };
-import TrackImage from "./TrackImage";
 
 function TrackTableRow(props: TrackTableRowProps) {
   return (

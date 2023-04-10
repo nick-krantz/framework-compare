@@ -1,9 +1,9 @@
-import express from "express";
-import cors, { CorsOptions } from "cors";
 import cookieParser from "cookie-parser";
-import { getUserDetails } from "./get-user-details";
-import { getPlaylists } from "./get-playlists";
+import cors, { CorsOptions } from "cors";
+import express from "express";
 import { getPlaylistDetails } from "./get-playlist-details";
+import { getPlaylists } from "./get-playlists";
+import { getUserDetails } from "./get-user-details";
 
 const {
   SPOTIFY_CLIENT_ID,

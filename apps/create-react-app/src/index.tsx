@@ -1,13 +1,12 @@
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, json, Navigate, RouterProvider } from "react-router-dom";
 import "./index.css";
-import { createBrowserRouter, json, RouterProvider } from "react-router-dom";
-import { Navigate } from "react-router-dom";
 
 import { SpotifyProvider } from "providers/SpotifyProvider/SpotifyProvider";
-import Root from "routes/root";
 import { Playlist } from "routes/playlist";
-import { api } from "service/api";
 import { PlaylistDetails } from "routes/playlist-detailts";
+import Root from "routes/root";
+import { api } from "service/api";
 
 const router = createBrowserRouter([
   {

@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function DownArrow(props: any) {
   return (
     <svg viewBox="0 0 24 24" className="w-6">

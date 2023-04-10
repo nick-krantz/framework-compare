@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function TrackIcon(props: any) {
   return (
     <svg viewBox="0 0 24 24" className="h-6 w-6">

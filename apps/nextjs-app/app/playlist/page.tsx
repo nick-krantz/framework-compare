@@ -1,3 +1,4 @@
+import { cookies } from "next/headers";
 import {
   PlaylistDetails,
   PlaylistImage,
@@ -6,7 +7,6 @@ import {
   PlaylistListItem,
 } from "../../mitosis";
 import { api } from "../../service/api";
-import { cookies } from "next/headers";
 
 export default async function Playlist() {
   const access_token = cookies().get("access_token");

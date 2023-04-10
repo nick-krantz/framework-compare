@@ -1,17 +1,4 @@
 import { GetPlaylistResponse } from "framework-compare-api";
-import { useLoaderData } from "react-router-dom";
-import { millisecondDisplay, sortTracks } from "framework-compare-utils";
-import {
-  TrackTable,
-  TrackTableRow,
-  TableHeader,
-  PlaylistDetailTitle,
-  TrackTableHeaderTitle,
-  TrackTableHeaderAlbumImage,
-  TrackTableHeaderArtist,
-  TrackTableHeaderDuration,
-} from "mitosis";
-import { useState } from "react";
 import {
   ARTIST_COLUMN,
   ASCENDING,
@@ -21,6 +8,19 @@ import {
   PlaylistColumns,
   SortState,
 } from "framework-compare-types";
+import { millisecondDisplay, sortTracks } from "framework-compare-utils";
+import {
+  PlaylistDetailTitle,
+  TableHeader,
+  TrackTable,
+  TrackTableHeaderAlbumImage,
+  TrackTableHeaderArtist,
+  TrackTableHeaderDuration,
+  TrackTableHeaderTitle,
+  TrackTableRow,
+} from "mitosis";
+import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
 
 export const PlaylistDetails = () => {
   const playlist = useLoaderData() as GetPlaylistResponse;

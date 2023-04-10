@@ -1,7 +1,6 @@
-import { SpotifyExternalURL } from "./SpotifyExternalURL";
-import { User } from "./User";
-import { Artist } from "./Artist";
 import { Album } from "./Album";
+import { Artist } from "./Artist";
+import { SpotifyExternalURL } from "./SpotifyExternalURL";
 
 export type Track = {
   /**

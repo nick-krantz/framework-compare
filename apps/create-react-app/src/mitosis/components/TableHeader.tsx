@@ -1,12 +1,11 @@
-import * as React from "react";
+import DownArrow from "./DownArrow";
+import UpArrow from "./UpArrow";
 
 type TableHeaderProps = {
   children: any;
   sorted: boolean;
   ascending: boolean;
 };
-import DownArrow from "./DownArrow";
-import UpArrow from "./UpArrow";
 
 function TableHeader(props: TableHeaderProps) {
   return (

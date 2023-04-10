@@ -1,5 +1,3 @@
-import * as React from "react";
-
 type TrackImageProps = {
   /** URL of the track image */
   url: string;

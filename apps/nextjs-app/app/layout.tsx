@@ -1,6 +1,6 @@
+import { Rubik } from "next/font/google";
 import Link from "next/link";
 import { Header, PageWrapper, PlaylistIcon } from "../mitosis";
-import { Rubik } from "next/font/google";
 
 import "./globals.css";
 
