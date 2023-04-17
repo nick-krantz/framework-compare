@@ -9,7 +9,8 @@
         "^build"
       ],
       "outputs": [
-        "dist/**"
+        "dist/**",
+        "build/**"
       ]
     },
     "lint": {
@@ -20,6 +21,11 @@
         "REACT_APP_ENDPOINT",
         "SPOTIFY_API_ENDPOINT",
         "REACT_APP_SPOTIFY_API_ENDPOINT"
+      ]
+    },
+    "preview": {
+      "dependsOn": [
+        "build"
       ]
     }
   }

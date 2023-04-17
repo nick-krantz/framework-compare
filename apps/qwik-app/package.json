@@ -6,7 +6,7 @@
   },
   "private": true,
   "scripts": {
-    "build": "qwik build",
+    "build": "qwik build preview",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
     "build.types": "tsc --incremental --noEmit",
@@ -16,7 +16,7 @@
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
-    "preview": "qwik build preview && vite preview --open",
+    "preview": "vite preview",
     "start": "vite --open --mode ssr",
     "qwik": "qwik"
   },

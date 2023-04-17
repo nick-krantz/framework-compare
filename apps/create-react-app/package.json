@@ -15,8 +15,9 @@
     "typescript": "^4.9.5"
   },
   "scripts": {
-    "dev": "cross-env PORT=${CREATE_REACT_APP_PORT} craco start",
-    "build": "craco build"
+    "dev": "cross-env PORT=${REACT_APP_PORT} craco start",
+    "build": "craco build",
+    "preview": "serve -s build -l REACT_APP_PORT"
   },
   "browserslist": [
     ">0.2%",
@@ -32,6 +33,7 @@
     "craco-babel-loader": "^1.0.4",
     "cross-env": "^7.0.3",
     "framework-compare-tsconfig": "*",
-    "react-router-dom": "^6.9.0"
+    "react-router-dom": "^6.9.0",
+    "serve": "^14.2.0"
   }
 }

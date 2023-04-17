@@ -4,7 +4,8 @@
   "author": "Nick Krantz",
   "private": true,
   "scripts": {
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "preview": "nodemon src/index.ts"
   },
   "dependencies": {
     "cookie-parser": "1.4.6",

@@ -7,4 +7,7 @@ export default defineConfig({
     // default to vite default of `5173`
     port: Number(process.env.SVELTE_PORT) || 5173,
   },
+  preview: {
+    port: Number(process.env.SVELTE_PORT) || 5173,
+  }
 });

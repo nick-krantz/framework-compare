@@ -10,7 +10,8 @@
     "build": "turbo run build",
     "dev": "dotenv -- turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md,js}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
+    "preview": "dotenv -- turbo run preview"
   },
   "devDependencies": {
     "@volar/vue-typescript": "^1.2.0",
