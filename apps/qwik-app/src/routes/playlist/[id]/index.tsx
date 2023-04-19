@@ -93,7 +93,7 @@ export default component$(() => {
         </thead>
 
         <tbody>
-          {tracks.items.map(({ track }) => (
+          {state.tracks.map((track) => (
             <TrackTableRow
               key={track.id}
               name={track.name}
