@@ -72,6 +72,8 @@ The `packages/*` are the shared components/utils used across the apps.
 1. Copy the `.env.base` file to `.env`.
 1. Add your Spotify Client ID and Client Secret to the `.env` file.
 1. Run `yarn dev` to start the dev server for all applications.
+1. Create React App will open automatically in your browser and try to authenticate with Spotify.
+  - All other applications will assume that you are authenticated and will throw errors if a token is not found.
 
 ### Commands
 
