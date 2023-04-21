@@ -1,4 +1,10 @@
+import { GET_USER_DETAILS_RESPONSE } from "./responses/get-user-details.response";
+
 export const getUserDetails = (token: string) => {
+  if (process.env.USE_STORED_API_RESPONSES === "true") {
+    return Promise.resolve(GET_USER_DETAILS_RESPONSE);
+  }
+
   return fetch("https://api.spotify.com/v1/me", {
     method: "GET",
     headers: {

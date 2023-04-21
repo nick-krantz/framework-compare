@@ -8,7 +8,6 @@ export const getPlaylistDetails = (token: string, playlistId: string) => {
     }
     return Promise.resolve(GET_PLAYLIST_DETAILS_RESPONSE[playlistId]);
   }
-  console.log("$$$$$$$$$$$$$$$$$$$$$");
 
   return fetch(`https://api.spotify.com/v1/playlists/${playlistId}`, {
     method: "GET",

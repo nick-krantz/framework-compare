@@ -1,2 +1,2 @@
-src/responses/*.json
-src/responses/*.ts
+src/responses/*
+!src/responses/get-user-details.response.ts
