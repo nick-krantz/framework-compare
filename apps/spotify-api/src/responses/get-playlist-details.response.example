@@ -1,0 +1,11 @@
+// Example hardcoded playlist object for testing purposes
+// To use this example, copy the contents of this file into the get-playlist-details.response.ts file
+// Save the response from `/v1/playlists/<SPOTIFY_PLAYLIST_ID>` api call as a json file
+// Import that json file into get-playlist-details.response.ts
+// Set the object key as the <SPOTIFY_PLAYLIST_ID> and the value to the json contents
+
+// import PlaylistName from './<SPOTIFY_PLAYLIST_ID>.json';
+
+// export const GET_PLAYLIST_DETAILS_RESPONSE: { [key: string]: any } = {
+//   "<SPOTIFY_PLAYLIST_ID>": PlaylistName,
+// }

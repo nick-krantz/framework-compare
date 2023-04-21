@@ -1,0 +1,8 @@
+// Example hardcoded playlists for testing purposes
+// To use this example, copy the contents of this file into the get-playlists.response.ts file
+// Save the response from your own `/v1/me/playlists` endpoint to a json file
+// Set GET_PLAYLISTS_RESPONSE variable to the contents of your json file
+
+// import allPlaylists from './all-playlists.json';
+//
+// export const GET_PLAYLISTS_RESPONSE = allPlaylists;

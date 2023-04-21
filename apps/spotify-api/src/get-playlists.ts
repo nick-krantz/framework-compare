@@ -1,4 +1,10 @@
+import { GET_PLAYLISTS_RESPONSE } from "./responses/get-playlists.response";
+
 export const getPlaylists = (token: string) => {
+  if (process.env.USE_STORED_API_RESPONSES === "true") {
+    return Promise.resolve(GET_PLAYLISTS_RESPONSE);
+  }
+
   return fetch("https://api.spotify.com/v1/me/playlists", {
     method: "GET",
     headers: {

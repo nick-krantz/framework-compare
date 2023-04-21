@@ -10,6 +10,7 @@ This is a monorepo with the purpose of comparing different JavaScript frameworks
   - [Architecture](#architecture)
     - [Apps](#apps)
     - [Packages](#packages)
+  - [Caveats](#caveats)
   - [Acknowledgements](#acknowledgements)
   - [Development](#development)
     - [Prerequisites](#prerequisites)
@@ -57,6 +58,11 @@ The `packages/*` are the shared components/utils used across the apps.
 ## Acknowledgements
 
 - All icons are from [Remix Icons](https://remixicon.com/)
+
+## Caveats
+
+- The current profile picture is hard coded to my picture. I cut out profile integration to make room for other development work. I'll probably swap it out for 
+a generic picture shortly.
 
 ## Development
 
