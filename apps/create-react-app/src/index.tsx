@@ -4,7 +4,7 @@ import "./index.css";
 
 import { SpotifyProvider } from "providers/SpotifyProvider/SpotifyProvider";
 import { Playlist } from "routes/playlist";
-import { PlaylistDetails } from "routes/playlist-detailts";
+import { PlaylistDetails } from "routes/playlist-details";
 import Root from "routes/root";
 import { api } from "service/api";
 
