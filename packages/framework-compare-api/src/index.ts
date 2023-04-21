@@ -1,21 +1,17 @@
-import { User } from "framework-compare-types";
 import { GetPlaylistResponse } from "./types/GetPlaylistResponse";
 import { GetPlaylistsResponse } from "./types/GetPlaylistsResponse";
 
 export const generateSpotifyAPI = (spotifyEndpoint: string) => ({
-  getUserDetails: (redirectURL: string): Promise<User | null> => {
+  isLoggedIn: (redirectURL: string): Promise<true | null> => {
     return fetch(`${spotifyEndpoint}/is-logged-in`, {
       method: "GET",
       credentials: "include",
     }).then(async (res) => {
       const authDetails = await res.json();
+      // When auth is true assume the user is logged in
+      // otherwise redirect to the login page
       if (authDetails.auth) {
-        return fetch(`${spotifyEndpoint}/get-user-details`, {
-          method: "GET",
-          credentials: "include",
-        }).then(async (res) => {
-          return await res.json();
-        });
+        return Promise.resolve(true);
       } else {
         window.location.href = `${spotifyEndpoint}/login?redirect=${encodeURIComponent(
           redirectURL
@@ -30,8 +26,8 @@ export const generateSpotifyAPI = (spotifyEndpoint: string) => ({
       credentials: "include",
       headers: cookie
         ? {
-            cookie: `access_token=${cookie};`,
-          }
+          cookie: `access_token=${cookie};`,
+        }
         : undefined,
     }).then(async (res) => {
       return await res.json();
@@ -43,8 +39,8 @@ export const generateSpotifyAPI = (spotifyEndpoint: string) => ({
       credentials: "include",
       headers: cookie
         ? {
-            cookie: `access_token=${cookie};`,
-          }
+          cookie: `access_token=${cookie};`,
+        }
         : undefined,
     }).then(async (res) => {
       return await res.json();

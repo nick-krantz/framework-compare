@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, json, Navigate, RouterProvider } from "react-router-dom";
 import "./index.css";
 
-import { SpotifyProvider } from "providers/SpotifyProvider/SpotifyProvider";
+import { SpotifyAuth } from "hoc/SpotifyAuth/SpotifyAuth";
 import { Playlist } from "routes/playlist";
 import { PlaylistDetails } from "routes/playlist-details";
 import Root from "routes/root";
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
 root.render(
-  <SpotifyProvider>
+  <SpotifyAuth>
     <RouterProvider router={router} />
-  </SpotifyProvider>
+  </SpotifyAuth>
 );

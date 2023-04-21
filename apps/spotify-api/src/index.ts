@@ -65,13 +65,13 @@ app.get("/login", function (req, res) {
   const scope = "user-read-private user-read-email";
   res.redirect(
     "https://accounts.spotify.com/authorize?" +
-      new URLSearchParams({
-        response_type: "code",
-        client_id: SPOTIFY_CLIENT_ID,
-        scope: scope,
-        redirect_uri: SPOTIFY_REDIRECT_URI,
-        state: state,
-      }).toString()
+    new URLSearchParams({
+      response_type: "code",
+      client_id: SPOTIFY_CLIENT_ID,
+      scope: scope,
+      redirect_uri: SPOTIFY_REDIRECT_URI,
+      state: state,
+    }).toString()
   );
 });
 
@@ -83,9 +83,9 @@ app.get("/callback", function (req, res) {
   if (state === null || state !== storedState) {
     res.redirect(
       "/#" +
-        new URLSearchParams({
-          error: "state_mismatch",
-        }).toString()
+      new URLSearchParams({
+        error: "state_mismatch",
+      }).toString()
     );
   } else {
     res.clearCookie(stateKey);
@@ -119,24 +119,20 @@ app.get("/callback", function (req, res) {
       } else {
         res.redirect(
           "/" +
-            new URLSearchParams({
-              error: "invalid_token",
-            }).toString()
+          new URLSearchParams({
+            error: "invalid_token",
+          }).toString()
         );
       }
     });
   }
 });
 
-app.get("/get-user-details", async (req, res) => {
-  const userDetails = await getUserDetails(req.cookies.access_token);
-
-  res.send(userDetails);
-});
-
 app.get("/is-logged-in", async (req, res) => {
   const userDetails = await getUserDetails(req.cookies.access_token);
 
+  // If user details are returned then assume access token is valid
+  // otherwise assume it is invalid
   res.send({ auth: !!userDetails });
 });
 
