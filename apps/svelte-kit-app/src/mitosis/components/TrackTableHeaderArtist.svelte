@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
-	type TrackTableHeaderArtistProps = {
-		children: any;
-	};
+  type TrackTableHeaderArtistProps = {
+    children: any;
+  };
 </script>
 
 <script lang="ts">

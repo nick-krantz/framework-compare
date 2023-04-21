@@ -1,13 +1,13 @@
 <script context="module" lang="ts">
-	type PlaylistDetailTitleProps = {
-		name: string;
-		description: string;
-	};
+  type PlaylistDetailTitleProps = {
+    name: string;
+    description: string;
+  };
 </script>
 
 <script lang="ts">
-	export let name: PlaylistDetailTitleProps['name'];
-	export let description: PlaylistDetailTitleProps['description'];
+  export let name: PlaylistDetailTitleProps["name"];
+  export let description: PlaylistDetailTitleProps["description"];
 </script>
 
 <h1 class="text-5xl font-normal text-center">{name}</h1>

@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "preview": "nodemon src/index.ts"
+    "preview": "nodemon src/index.ts",
+    "format": "prettier --write \"**/*.{ts,tsx,md,js}\""
   },
   "dependencies": {
     "cookie-parser": "1.4.6",

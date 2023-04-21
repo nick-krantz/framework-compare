@@ -1,5 +1,11 @@
 <script>
-	import { ARTIST_COLUMN, ASCENDING, DESCENDING, DURATION_COLUMN, NAME_COLUMN } from "framework-compare-types";
+  import {
+    ARTIST_COLUMN,
+    ASCENDING,
+    DESCENDING,
+    DURATION_COLUMN,
+    NAME_COLUMN,
+  } from "framework-compare-types";
   import {
     PlaylistDetailTitle,
     TrackTable,
@@ -10,12 +16,12 @@
     TrackTableRow,
     TableHeader,
   } from "../../../mitosis";
-  import {millisecondDisplay, sortTracks} from "framework-compare-utils";
+  import { millisecondDisplay, sortTracks } from "framework-compare-utils";
 
-  /** @type {import('./$types').PageData} */
+  /** @type {import("./$types").PageData} */
   export let data;
 
-  const {name, description} = data;
+  const { name, description } = data;
 
   const initialState = sortTracks(
     data.tracks?.items.map((i) => i.track) ?? [],
@@ -27,11 +33,9 @@
     tracks: initialState.tracks,
     sortedColumn: NAME_COLUMN,
     sortDirection: initialState.newDirection,
-  }
+  };
 
-  /**
-   * @param {import("framework-compare-types").PlaylistColumns} column
-   */
+  /** @param {import("framework-compare-types").PlaylistColumns} column */
   const sort = (column) => () => {
     const { tracks, sortDirection, sortedColumn } = playlistState;
 
@@ -47,11 +51,10 @@
   };
 
   $: ascending = playlistState.sortDirection === ASCENDING;
-
 </script>
 
 <section>
-  <PlaylistDetailTitle name={name} description={description ?? ""} />
+  <PlaylistDetailTitle {name} description={description ?? ""} />
 
   <TrackTable>
     <thead>
@@ -90,6 +93,6 @@
           duration={millisecondDisplay(track.duration_ms)}
         />
       {/each}
-      </tbody>
+    </tbody>
   </TrackTable>
 </section>

@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
-	type PlaylistListItemProps = {
-		children: any;
-	};
+  type PlaylistListItemProps = {
+    children: any;
+  };
 </script>
 
 <script lang="ts">

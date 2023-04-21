@@ -9,5 +9,5 @@ export default defineConfig({
   },
   preview: {
     port: Number(process.env.SVELTE_PORT) || 5173,
-  }
+  },
 });

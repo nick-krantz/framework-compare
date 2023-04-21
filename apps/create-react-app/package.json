@@ -17,6 +17,7 @@
   "scripts": {
     "dev": "cross-env PORT=${REACT_APP_PORT} craco start",
     "build": "craco build",
+    "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
     "preview": "serve -s build -l ${REACT_APP_PORT}"
   },
   "browserslist": [

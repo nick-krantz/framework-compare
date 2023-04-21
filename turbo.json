@@ -16,6 +16,9 @@
     "lint": {
       "outputs": []
     },
+    "format": {
+      "outputs": []
+    },
     "dev": {
       "env": [
         "REACT_APP_ENDPOINT",
