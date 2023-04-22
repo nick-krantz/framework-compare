@@ -1,14 +1,14 @@
-import { $, component$, useStore } from "@builder.io/qwik";
-import { routeLoader$ } from "@builder.io/qwik-city";
-import type { PlaylistColumns, SortState } from "framework-compare-types";
+import { $, component$, useStore } from '@builder.io/qwik';
+import { routeLoader$ } from '@builder.io/qwik-city';
+import type { PlaylistColumns, SortState } from 'framework-compare-types';
 import {
   ARTIST_COLUMN,
   ASCENDING,
   DESCENDING,
   DURATION_COLUMN,
   NAME_COLUMN,
-} from "framework-compare-types";
-import { millisecondDisplay, sortTracks } from "framework-compare-utils";
+} from 'framework-compare-types';
+import { millisecondDisplay, sortTracks } from 'framework-compare-utils';
 import {
   PlaylistDetailTitle,
   TableHeader,
@@ -18,13 +18,13 @@ import {
   TrackTableHeaderDuration,
   TrackTableHeaderTitle,
   TrackTableRow,
-} from "~/mitosis";
-import { api } from "~/service/api";
+} from '~/mitosis';
+import { api } from '~/service/api';
 
 export const usePlaylists = routeLoader$(async ({ cookie, params }) => {
   const playlistResponse = await api.getPlaylistDetails(
     params.id,
-    cookie.get("access_token")?.value
+    cookie.get('access_token')?.value
   );
   return playlistResponse;
 });
@@ -60,31 +60,44 @@ export default component$(() => {
       state.sortDirection = newSort.newDirection;
     });
 
+  const sortName = sort(NAME_COLUMN);
+  const sortArtist = sort(ARTIST_COLUMN);
+  const sortDuration = sort(DURATION_COLUMN);
+
   return (
     <section>
-      <PlaylistDetailTitle name={name} description={description ?? ""} />
+      <PlaylistDetailTitle name={name} description={description ?? ''} />
 
       <TrackTable>
         <thead>
           <tr>
             <TrackTableHeaderAlbumImage />
             <TrackTableHeaderTitle>
-              <button onClick$={sort(NAME_COLUMN)} class="w-full">
-                <TableHeader sorted={state.sortedColumn === NAME_COLUMN} ascending={ascending}>
+              <button onClick$={$(() => sortName())} class="w-full">
+                <TableHeader
+                  sorted={state.sortedColumn === NAME_COLUMN}
+                  ascending={ascending}
+                >
                   TITLE
                 </TableHeader>
               </button>
             </TrackTableHeaderTitle>
             <TrackTableHeaderArtist>
-              <button onClick$={sort(ARTIST_COLUMN)} class="w-full">
-                <TableHeader sorted={state.sortedColumn === ARTIST_COLUMN} ascending={ascending}>
+              <button onClick$={$(() => sortArtist())} class="w-full">
+                <TableHeader
+                  sorted={state.sortedColumn === ARTIST_COLUMN}
+                  ascending={ascending}
+                >
                   ARTIST
                 </TableHeader>
               </button>
             </TrackTableHeaderArtist>
             <TrackTableHeaderDuration>
-              <button onClick$={sort(DURATION_COLUMN)} class="w-full">
-                <TableHeader sorted={state.sortedColumn === DURATION_COLUMN} ascending={ascending}>
+              <button onClick$={$(() => sortDuration())} class="w-full">
+                <TableHeader
+                  sorted={state.sortedColumn === DURATION_COLUMN}
+                  ascending={ascending}
+                >
                   DURATION
                 </TableHeader>
               </button>
@@ -97,7 +110,7 @@ export default component$(() => {
             <TrackTableRow
               key={track.id}
               name={track.name}
-              artist={track.artists.map((a) => a.name).join(", ")}
+              artist={track.artists.map((a) => a.name).join(', ')}
               imageURL={track.album.images[0].url}
               duration={millisecondDisplay(track.duration_ms)}
             />
